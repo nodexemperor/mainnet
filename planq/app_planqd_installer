@@ -4,29 +4,29 @@
 
 PROJECT="PLANQ"
 NETWORK="MAINNET"
-GO_VERSION=""1.20.8
-REPO_LINK="https://github.com/planq-network/planq.git"
+GO_VERSION="1.21.1"
+REPO_LINK="https://github.com/planq-network/planq"
 VERSION="v1.0.7"
 REPO_FOLDER="planq-repo"
 BINARY="planqd"
 CHAIN="planq_7070-2"
 FOLDER=".planqd"
 GENESIS="https://snapshots.nodestake.top/planq/genesis.json"
-ADDRBOOK=""https://snapshots.nodestake.top/planq/Addrbook.json
+ADDRBOOK="https://snapshots.nodestake.top/planq/addrbook.json"
 PEERS="1adb7bf1e2775981f20a6e7ae85d6c82d9c13ebc@65.109.104.72:20356"
 SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:20356"
 DENOM="aplanq"
-MIN_GAS_PRICE=""0.0085
+MIN_GAS_PRICE="0"
 PRUNING="custom"
 INDEXER="null"
 KEYRING="file"
 
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
-SNAP_NAME=""
-SNAP_LINK="https://snapshots.nodestake.top/planq/2023-09-17_planq_5018587.tar.lz4"
-SNAP_RPC="https://rpc.planq.nodestake.top"
-STATESYNC_PEERS=""
+# SNAP_NAME="$(curl -s https://snapshots.nodestake.top/planq/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"
+# SNAP_LINK="https://snapshots.nodestake.top/planq/${SNAP_NAME}"
+SNAP_RPC="https://planq-rpc.polkachu.com:443"
+STATESYNC_PEERS="1adb7bf1e2775981f20a6e7ae85d6c82d9c13ebc@65.109.104.72:20356"
 
 ##### NODE COMPONENTS #####
 
@@ -57,9 +57,9 @@ sed -i 's/MIN_GAS_PRICE=""/MIN_GAS_PRICE="'$MIN_GAS_PRICE'"/g' app_${BINARY}
 sed -i 's/PRUNING=""/PRUNING="'$PRUNING'"/g' app_${BINARY}
 sed -i 's/INDEXER=""/INDEXER="'$INDEXER'"/g' app_${BINARY}
 sed -i 's/KEYRING=""/KEYRING="'$KEYRING'"/g' app_${BINARY}
-# sed -i "s#SNAP_NAME=\"\"#SNAP_NAME="\$(curl -s http://localhost/cosmos/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g" app_${BINARY}
-# sed -i "s#SNAP_LINK=\"\"#SNAP_LINK="http://localhost/cosmos/${SNAP_NAME}"#g" app_${BINARY}
-sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
+sed -i 's#SNAP_NAME=""#SNAP_NAME="$(curl -s https://snapshots.nodestake.top/planq/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g' app_${BINARY}
+sed -i 's#SNAP_LINK=""#SNAP_LINK="https://snapshots.nodestake.top/planq/${SNAP_NAME}"#g' app_${BINARY}
+# sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
 sed -i 's#SNAP_RPC=""#SNAP_RPC="'$SNAP_RPC'"#g' app_${BINARY}
 sed -i 's/STATESYNC_PEERS=""/STATESYNC_PEERS="'$STATESYNC_PEERS'"/g' app_${BINARY}
 sed -i 's/COSMOVISOR_VERSION=""/COSMOVISOR_VERSION="'$COSMOVISOR_VERSION'"/g' app_${BINARY}
