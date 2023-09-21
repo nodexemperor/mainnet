@@ -4,8 +4,8 @@
 
 PROJECT="DECENTR"
 NETWORK="MAINNET"
-GO_VERSION=""1.21.1
-REPO_LINK="https://github.com/Decentr-net/decentr.git"
+GO_VERSION="1.21.1"
+REPO_LINK="https://github.com/Decentr-net/decentr"
 VERSION="v1.6.2"
 REPO_FOLDER="decentr-repo"
 BINARY="decentrd"
@@ -13,7 +13,7 @@ CHAIN="mainnet-3"
 FOLDER=".decentr"
 GENESIS="https://raw.githubusercontent.com/Decentr-net/mainnets/master/3.0/genesis.json"
 ADDRBOOK="https://snap.kynraze.com/decentr/addrbook.json"
-PEERS="6afae5a544d74a8581da932aaa6d483ce797a6b1@75.119.157.167:28656"
+PEERS="6afae5a544d74a8581da932aaa6d483ce797a6b1@75.119.157.167:28656,c9c95b75c8364d8d1eaa6a7641300303591a446f@192.99.160.197:12656"
 SEEDS="3261bff0b7c16dcf6b5b8e62dd54faafbfd75415@hera.mainnet.decentr.xyz:26656,5f3cfa2e3d5ed2c2ef699c8593a3d93c902406a9@hermes.mainnet.decentr.xyz:26656,a529801b5390f56d5c280eaff4ae95b7163e385f@melpomene.mainnet.decentr.xyz:26656"
 DENOM="udec"
 MIN_GAS_PRICE="0.0025"
@@ -25,8 +25,8 @@ KEYRING="file"
 
 SNAP_NAME=""
 SNAP_LINK="https://snap.kynraze.com/decentr/snapshot-latest.tar.lz4"
-SNAP_RPC="https://decentr-rpc.kynraze.com:443"
-STATESYNC_PEERS="c9c95b75c8364d8d1eaa6a7641300303591a446f@192.99.160.197:12656"
+SNAP_RPC="https://decentr-rpc.ibs.team:443"
+STATESYNC_PEERS="6afae5a544d74a8581da932aaa6d483ce797a6b1@75.119.157.167:28656"
 
 ##### NODE COMPONENTS #####
 
