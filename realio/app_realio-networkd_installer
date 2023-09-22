@@ -2,21 +2,21 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="PLANQ"
+PROJECT="REALIO"
 NETWORK="MAINNET"
-GO_VERSION=""1.20.8
-REPO_LINK="https://github.com/planq-network/planq.git"
-VERSION="v1.0.7"
-REPO_FOLDER="planq-repo"
-BINARY="planqd"
-CHAIN="planq_7070-2"
-FOLDER=".planqd"
-GENESIS="https://snapshots.nodestake.top/planq/genesis.json"
-ADDRBOOK=""https://snapshots.nodestake.top/planq/Addrbook.json
-PEERS="1adb7bf1e2775981f20a6e7ae85d6c82d9c13ebc@65.109.104.72:20356"
-SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:20356"
-DENOM="aplanq"
-MIN_GAS_PRICE=""0.0085
+GO_VERSION="1.21.1"
+REPO_LINK="https://github.com/realiotech/realio-network.git"
+VERSION="v0.8.3"
+REPO_FOLDER="realio-repo"
+BINARY="realio-networkd"
+CHAIN="realionetwork_3301-1"
+FOLDER=".realio-network"
+GENESIS="https://mainnet-files.itrocket.net/realio/genesis.json"
+ADDRBOOK="https://mainnet-files.itrocket.net/realio/addrbook.json"
+PEERS="2815cc1437461f808a7f022c0df679fa27918dbc@realio-mainnet-peer.itrocket.net:23656"
+SEEDS="a5039f260cd848facfbe7fbe62bf3e8adfce9c98@realio-mainnet-seed.itrocket.net:23656"
+DENOM="ario"
+MIN_GAS_PRICE="0.0"
 PRUNING="custom"
 INDEXER="null"
 KEYRING="file"
@@ -24,9 +24,9 @@ KEYRING="file"
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.nodestake.top/planq/2023-09-17_planq_5018587.tar.lz4"
-SNAP_RPC="https://rpc.planq.nodestake.top"
-STATESYNC_PEERS=""
+SNAP_LINK="https://mainnet-files.itrocket.net/realio/snap_realio.tar.lz4"
+SNAP_RPC="https://realio-mainnet-rpc.itrocket.net:443"
+STATESYNC_PEERS="2815cc1437461f808a7f022c0df679fa27918dbc@realio-mainnet-peer.itrocket.net:23656"
 
 ##### NODE COMPONENTS #####
 
