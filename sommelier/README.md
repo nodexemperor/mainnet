@@ -7,18 +7,18 @@
 <hr>
 
 <p align="center">
-  <img height="100" height="auto" src="https://polkachu.com/images/chains/planq.png">
+  <img height="100" height="auto" src="https://explorer.nodexcapital.com/logos/sommelier.png">
 </p>
 
-# Planq Mainnet
+# Sommelier Mainnet
 
 ### Explorer:
--  https://explorer.nodexcapital.com/planq
+-  https://explorer.nodexcapital.com/sommelier
 
 ### Cosmos Node Application (CLI)
-You can setup your Planq fullnode on app_planqd in few minutes below.
+You can setup your Sommelier fullnode on app_sommelier in few minutes below.
 ```bash
-wget -q https://github.com/nodexemperor/mainnet/raw/main/planq/app_planqd_installer && bash app_planqd_installer
+wget -q https://github.com/nodexemperor/mainnet/raw/main/sommelier/app_sommelier_installer && bash app_sommelier_installer
 ```
 ### Public Endpoint
 

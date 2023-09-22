@@ -2,21 +2,21 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="PLANQ"
+PROJECT="SOMMELIER"
 NETWORK="MAINNET"
-GO_VERSION=""1.20.8
-REPO_LINK="https://github.com/planq-network/planq.git"
-VERSION="v1.0.7"
-REPO_FOLDER="planq-repo"
-BINARY="planqd"
-CHAIN="planq_7070-2"
-FOLDER=".planqd"
-GENESIS="https://snapshots.nodestake.top/planq/genesis.json"
-ADDRBOOK=""https://snapshots.nodestake.top/planq/Addrbook.json
-PEERS="1adb7bf1e2775981f20a6e7ae85d6c82d9c13ebc@65.109.104.72:20356"
-SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:20356"
-DENOM="aplanq"
-MIN_GAS_PRICE=""0.0085
+GO_VERSION="1.21.1"
+REPO_LINK="https://github.com/PeggyJV/sommelier"
+VERSION="v6.0.0"
+REPO_FOLDER="sommelier-repo"
+BINARY="sommelier"
+CHAIN="sommelier-3"
+FOLDER="https://github.com/PeggyJV/sommelier"
+GENESIS="https://snapshots.polkachu.com/genesis/sommelier/genesis.json"
+ADDRBOOK="https://snapshots.polkachu.com/addrbook/sommelier/addrbook.json"
+PEERS="49baa24d690f36b5a016d7803f09e1832d905464@65.109.104.72:14156"
+SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:14156"
+DENOM="usomm"
+MIN_GAS_PRICE="0"
 PRUNING="custom"
 INDEXER="null"
 KEYRING="file"
@@ -24,9 +24,9 @@ KEYRING="file"
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.nodestake.top/planq/2023-09-17_planq_5018587.tar.lz4"
-SNAP_RPC="https://rpc.planq.nodestake.top"
-STATESYNC_PEERS=""
+SNAP_LINK="https://snapshots.polkachu.com/snapshots/sommelier/sommelier_10912266.tar.lz4"
+SNAP_RPC="https://sommelier-rpc.polkachu.com:443"
+STATESYNC_PEERS="49baa24d690f36b5a016d7803f09e1832d905464@65.109.104.72:14156"
 
 ##### NODE COMPONENTS #####
 

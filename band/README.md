@@ -7,18 +7,18 @@
 <hr>
 
 <p align="center">
-  <img height="100" height="auto" src="https://polkachu.com/images/chains/planq.png">
+  <img height="100" height="auto" src="https://explorer.nodexcapital.com/logos/band-protocol.png">
 </p>
 
 # Planq Mainnet
 
 ### Explorer:
--  https://explorer.nodexcapital.com/planq
+-  https://explorer.nodexcapital.com/band
 
 ### Cosmos Node Application (CLI)
-You can setup your Planq fullnode on app_planqd in few minutes below.
+You can setup your Band fullnode on app_bandd in few minutes below.
 ```bash
-wget -q https://github.com/nodexemperor/mainnet/raw/main/planq/app_planqd_installer && bash app_planqd_installer
+wget -q https://github.com/nodexemperor/mainnet/raw/main/band/app_bandd_installer && bash app_bandd_installer
 ```
 ### Public Endpoint
 
