@@ -5,7 +5,7 @@
 PROJECT="ORAICHAIN"
 NETWORK="MAINNET"
 GO_VERSION="1.21.1"
-REPO_LINK="https://github.com/oraichain/orai"
+REPO_LINK="https://github.com/sxlmnwb/orai"
 VERSION="v0.41.4"
 REPO_FOLDER="orai-repo"
 BINARY="oraid"
@@ -23,10 +23,10 @@ KEYRING="file"
 
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
-SNAP_NAME=""
-SNAP_LINK="https://snapshots.nodestake.top/planq/2023-09-17_planq_5018587.tar.lz4"
-SNAP_RPC="https://rpc.orai.io:443"
-STATESYNC_PEERS="4d0f2d042405abbcac5193206642e1456fe89963@3.134.19.98:26656,24631e98a167492fd4c92c582cee5fd6fcd8ad59@162.55.253.58:26656"
+# SNAP_NAME="$(curl -s 'https://s3.fr-par.scw.cloud/snapshots.nysa.network/?list-type=2&delimiter=/&prefix=Oraichain/&max-keys=50' | grep -oP '(?<=<Key>Oraichain/Oraichain_)\d+(?=\.tar\.lz4</Key>)' | sort -nr | head -n 1)"
+# SNAP_LINK="https://snapshots.nysa.network/Oraichain/Oraichain_${SNAP_NAME}.tar.lz4"
+SNAP_RPC="http://3.134.19.98:26657"
+STATESYNC_PEERS="4d0f2d042405abbcac5193206642e1456fe89963@3.134.19.98:26656"
 
 ##### NODE COMPONENTS #####
 
@@ -57,8 +57,9 @@ sed -i 's/MIN_GAS_PRICE=""/MIN_GAS_PRICE="'$MIN_GAS_PRICE'"/g' app_${BINARY}
 sed -i 's/PRUNING=""/PRUNING="'$PRUNING'"/g' app_${BINARY}
 sed -i 's/INDEXER=""/INDEXER="'$INDEXER'"/g' app_${BINARY}
 sed -i 's/KEYRING=""/KEYRING="'$KEYRING'"/g' app_${BINARY}
-# sed -i "s#SNAP_NAME=\"\"#SNAP_NAME="\$(curl -s http://localhost/cosmos/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g" app_${BINARY}
-# sed -i "s#SNAP_LINK=\"\"#SNAP_LINK="http://localhost/cosmos/${SNAP_NAME}"#g" app_${BINARY}
+sed -i 's#SNAP_NAME=""#SNAP_NAME="$(curl -s 'https://s3.fr-par.scw.cloud/snapshots.nysa.network/?list-type=2&delimiter=/&prefix=Oraichain/&max-keys=50' | grep -oP '(?<=<Key>Oraichain/Oraichain_)\d+(?=\.tar\.lz4</Key>)' | sort -nr | head -n 1)"#g' app_${BINARY}
+sed -i 's#SNAP_LINK=""#SNAP_LINK="https://snapshots.nysa.network/Oraichain/Oraichain_${SNAP_NAME}.tar.lz4"#g' app_${BINARY}
+# sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
 sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
 sed -i 's#SNAP_RPC=""#SNAP_RPC="'$SNAP_RPC'"#g' app_${BINARY}
 sed -i 's/STATESYNC_PEERS=""/STATESYNC_PEERS="'$STATESYNC_PEERS'"/g' app_${BINARY}
