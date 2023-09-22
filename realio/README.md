@@ -10,7 +10,7 @@
   <img height="100" height="auto" src="https://explorer.nodexcapital.com/logos/realio.png">
 </p>
 
-# Planq Mainnet
+# Realio Mainnet
 
 ### Explorer:
 -  https://explorer.nodexcapital.com/realio
