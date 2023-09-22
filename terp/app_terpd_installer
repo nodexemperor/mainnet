@@ -2,21 +2,21 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="PLANQ"
+PROJECT="TERP"
 NETWORK="MAINNET"
-GO_VERSION=""1.20.8
-REPO_LINK="https://github.com/planq-network/planq.git"
-VERSION="v1.0.7"
-REPO_FOLDER="planq-repo"
-BINARY="planqd"
-CHAIN="planq_7070-2"
-FOLDER=".planqd"
-GENESIS="https://snapshots.nodestake.top/planq/genesis.json"
-ADDRBOOK=""https://snapshots.nodestake.top/planq/Addrbook.json
-PEERS="1adb7bf1e2775981f20a6e7ae85d6c82d9c13ebc@65.109.104.72:20356"
-SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:20356"
-DENOM="aplanq"
-MIN_GAS_PRICE=""0.0085
+GO_VERSION="1.19.10"
+REPO_LINK="https://github.com/terpnetwork/terp-core.git"
+VERSION="barberry"
+REPO_FOLDER="terp-repo"
+BINARY="terpd"
+CHAIN="morocco-1"
+FOLDER=".terp"
+GENESIS="https://mainnet-files.itrocket.net/terp/genesis.json"
+ADDRBOOK="https://mainnet-files.itrocket.net/terp/addrbook.json"
+PEERS="a81dc3bf1bb1c3837b768eeb82659eecc971890b@terp-mainnet-peer.itrocket.net:13656"
+SEEDS="d8256642afae77264bcce1631d51233a9d00249b@terp-mainnet-seed.itrocket.net:13656"
+DENOM="uterp"
+MIN_GAS_PRICE="0"
 PRUNING="custom"
 INDEXER="null"
 KEYRING="file"
@@ -24,13 +24,13 @@ KEYRING="file"
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.nodestake.top/planq/2023-09-17_planq_5018587.tar.lz4"
-SNAP_RPC="https://rpc.planq.nodestake.top"
-STATESYNC_PEERS=""
+SNAP_LINK="https://mainnet-files.itrocket.net/terp/snap_terp.tar.lz4"
+SNAP_RPC="https://terp-mainnet-rpc.itrocket.net:443"
+STATESYNC_PEERS="a81dc3bf1bb1c3837b768eeb82659eecc971890b@terp-mainnet-peer.itrocket.net:13656"
 
 ##### NODE COMPONENTS #####
 
-COSMOVISOR_VERSION="v1.5.0"
+COSMOVISOR_VERSION="v1.4.0"
 LIBWASMVM_VERSION="v1.4.0"
 
 # Download cosmos_node_app
