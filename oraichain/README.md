@@ -7,18 +7,18 @@
 <hr>
 
 <p align="center">
-  <img height="100" height="auto" src="https://polkachu.com/images/chains/planq.png">
+  <img height="100" height="auto" src="https://explorer.nodexcapital.com/logos/oraichain.jpg">
 </p>
 
 # Planq Mainnet
 
 ### Explorer:
--  https://explorer.nodexcapital.com/planq
+-  https://explorer.nodexcapital.com/oraichain
 
 ### Cosmos Node Application (CLI)
-You can setup your Planq fullnode on app_planqd in few minutes below.
+You can setup your Oraichain fullnode on app_oraid in few minutes below.
 ```bash
-wget -q https://github.com/nodexemperor/mainnet/raw/main/planq/app_planqd_installer && bash app_planqd_installer
+wget -q https://github.com/nodexemperor/mainnet/raw/main/oraichain/app_oraid_installer && bash app_oraid_installer
 ```
 ### Public Endpoint
 
