@@ -2,21 +2,21 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="GITOPIA"
+PROJECT="COMPOSABLE"
 NETWORK="MAINNET"
 GO_VERSION="1.21.1"
-REPO_LINK="https://github.com/gitopia/gitopia.git"
-VERSION="v3.2.0"
-REPO_FOLDER="gitopia-repo"
-BINARY="gitopiad"
-CHAIN="gitopia"
-FOLDER=".gitopia"
-GENESIS="https://snapshots.kjnodes.com/gitopia/genesis.json"
-ADDRBOOK="https://snapshots.kjnodes.com/gitopia/addrbook.json"
-PEERS="d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@gitopia.rpc.kjnodes.com:14156"
-SEEDS="400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@gitopia.rpc.kjnodes.com:14159"
-DENOM="ulore"
-MIN_GAS_PRICE="0.001"
+REPO_LINK="https://github.com/notional-labs/composable-centauri.git"
+VERSION="v5.1.0"
+REPO_FOLDER="composable-repo"
+BINARY="centaurid"
+CHAIN="centauri-1"
+FOLDER=".banksy"
+GENESIS="https://snapshots.kjnodes.com/composable/genesis.json"
+ADDRBOOK="https://snapshots.kjnodes.com/composable/addrbook.json"
+PEERS="d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@composable.rpc.kjnodes.com:15956"
+SEEDS="400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@composable.rpc.kjnodes.com:15959"
+DENOM="ppica"
+MIN_GAS_PRICE="0"
 PRUNING="custom"
 INDEXER="null"
 KEYRING="file"
@@ -24,9 +24,9 @@ KEYRING="file"
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.kjnodes.com/gitopia/snapshot_latest.tar.lz4"
-SNAP_RPC="https://gitopia.rpc.kjnodes.com:443"
-STATESYNC_PEERS="d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@gitopia.rpc.kjnodes.com:14156"
+SNAP_LINK="https://snapshots.kjnodes.com/composable/snapshot_latest.tar.lz4"
+SNAP_RPC="https://composable.rpc.kjnodes.com:443"
+STATESYNC_PEERS="d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@composable.rpc.kjnodes.com:15956"
 
 ##### NODE COMPONENTS #####
 

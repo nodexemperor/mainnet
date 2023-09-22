@@ -7,18 +7,18 @@
 <hr>
 
 <p align="center">
-  <img height="100" height="auto" src="https://explorer.nodexcapital.com/logos/gitopia.png">
+  <img height="100" height="auto" src="https://explorer.nodexcapital.com/logos/composable.png">
 </p>
 
-# Gitopia Mainnet
+# Composable Mainnet
 
 ### Explorer:
--  https://explorer.nodexcapital.com/gitopia
+-  https://explorer.nodexcapital.com/composable
 
 ### Cosmos Node Application (CLI)
-You can setup your Gitopia fullnode on app_gitopiad in few minutes below.
+You can setup your Composable fullnode on app_centaurid in few minutes below.
 ```bash
-wget -q https://github.com/nodexemperor/mainnet/raw/main/gitopia/app_gitopiad_installer && bash app_gitopiad_installer
+wget -q https://github.com/nodexemperor/mainnet/raw/main/composable/app_centaurid_installer && bash app_centaurid_installer
 ```
 ### Public Endpoint
 

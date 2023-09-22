@@ -2,21 +2,21 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="PLANQ"
+PROJECT="NOLUS"
 NETWORK="MAINNET"
-GO_VERSION=""1.20.8
-REPO_LINK="https://github.com/planq-network/planq.git"
-VERSION="v1.0.7"
-REPO_FOLDER="planq-repo"
-BINARY="planqd"
-CHAIN="planq_7070-2"
-FOLDER=".planqd"
-GENESIS="https://snapshots.nodestake.top/planq/genesis.json"
-ADDRBOOK=""https://snapshots.nodestake.top/planq/Addrbook.json
-PEERS="1adb7bf1e2775981f20a6e7ae85d6c82d9c13ebc@65.109.104.72:20356"
-SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:20356"
-DENOM="aplanq"
-MIN_GAS_PRICE=""0.0085
+GO_VERSION="1.21.1"
+REPO_LINK="https://github.com/Nolus-Protocol/nolus-core.git"
+VERSION="v0.4.1"
+REPO_FOLDER="nolus-repo"
+BINARY="nolusd"
+CHAIN="pirin-1"
+FOLDER=".nolus"
+GENESIS="https://snapshots.kjnodes.com/nolus/genesis.json"
+ADDRBOOK="https://snapshots.kjnodes.com/nolus/addrbook.json"
+PEERS="d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@nolus.rpc.kjnodes.com:14356"
+SEEDS="400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@nolus.rpc.kjnodes.com:14359"
+DENOM="unls"
+MIN_GAS_PRICE="0.0025"
 PRUNING="custom"
 INDEXER="null"
 KEYRING="file"
@@ -24,9 +24,9 @@ KEYRING="file"
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.nodestake.top/planq/2023-09-17_planq_5018587.tar.lz4"
-SNAP_RPC="https://rpc.planq.nodestake.top"
-STATESYNC_PEERS=""
+SNAP_LINK="https://snapshots.kjnodes.com/nolus/snapshot_latest.tar.lz4"
+SNAP_RPC="https://nolus.rpc.kjnodes.com:443"
+STATESYNC_PEERS="d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@nolus.rpc.kjnodes.com:14356"
 
 ##### NODE COMPONENTS #####
 
