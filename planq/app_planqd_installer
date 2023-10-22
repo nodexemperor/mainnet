@@ -11,8 +11,8 @@ REPO_FOLDER="planq-repo"
 BINARY="planqd"
 CHAIN="planq_7070-2"
 FOLDER=".planqd"
-GENESIS="https://snapshots.nodestake.top/planq/genesis.json"
-ADDRBOOK="https://snapshots.nodestake.top/planq/addrbook.json"
+GENESIS="https://ss.planq.nodestake.top/genesis.json"
+ADDRBOOK="https://ss.planq.nodestake.top/addrbook.json"
 PEERS="1adb7bf1e2775981f20a6e7ae85d6c82d9c13ebc@65.109.104.72:20356"
 SEEDS="ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:20356"
 DENOM="aplanq"
@@ -57,8 +57,8 @@ sed -i 's/MIN_GAS_PRICE=""/MIN_GAS_PRICE="'$MIN_GAS_PRICE'"/g' app_${BINARY}
 sed -i 's/PRUNING=""/PRUNING="'$PRUNING'"/g' app_${BINARY}
 sed -i 's/INDEXER=""/INDEXER="'$INDEXER'"/g' app_${BINARY}
 sed -i 's/KEYRING=""/KEYRING="'$KEYRING'"/g' app_${BINARY}
-sed -i 's#SNAP_NAME=""#SNAP_NAME="$(curl -s https://snapshots.nodestake.top/planq/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g' app_${BINARY}
-sed -i 's#SNAP_LINK=""#SNAP_LINK="https://snapshots.nodestake.top/planq/${SNAP_NAME}"#g' app_${BINARY}
+sed -i 's#SNAP_NAME=""#SNAP_NAME="$(curl --max-time 1 -s https://ss.planq.nodestake.top/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g' app_${BINARY}
+sed -i 's#SNAP_LINK=""#SNAP_LINK="https://ss.planq.nodestake.top/${SNAP_NAME}"#g' app_${BINARY}
 # sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
 sed -i 's#SNAP_RPC=""#SNAP_RPC="'$SNAP_RPC'"#g' app_${BINARY}
 sed -i 's/STATESYNC_PEERS=""/STATESYNC_PEERS="'$STATESYNC_PEERS'"/g' app_${BINARY}
